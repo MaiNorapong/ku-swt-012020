@@ -33,4 +33,8 @@ public class Branch {
         }
         totalAmountPerPerson.merge(account.getOwner(), amount, Float::sum);
     }
+
+    public static float getMinDepositAmountPerTransaction() {
+        return minDepositAmountPerTransaction;
+    }
 }

@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class DepositMinAmountTransactionTest {
-    private static float minDepositAmount = 100.00f;
+    private static final float minDepositAmount = Branch.getMinDepositAmountPerTransaction();
 
     @Test
     @DisplayName("Deposit less than minimum deposit amount, result should be false")
