@@ -30,4 +30,8 @@ public class Account {
     public boolean isSuspended() {
         return suspended;
     }
+
+    public Person getOwner() {
+        return owner;
+    }
 }
